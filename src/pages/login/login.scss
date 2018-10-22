@@ -1,0 +1,17 @@
+
+    .img{
+        background-image:url('../../assets/imgs/do.png');
+    
+        background-size: cover;
+        height: 100%;
+        overflow: hidden;
+        .item-md, .item-ios {
+          background: none;
+        }
+        .list{
+            background:white;
+        }
+        h1{
+            text-align: center;
+        }
+    }

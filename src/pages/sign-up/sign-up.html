@@ -1,0 +1,36 @@
+
+<ion-header>
+
+    <ion-navbar color="secondary">
+      <h1><ion-title>signup</ion-title></h1>
+    </ion-navbar>
+  
+  </ion-header>
+  
+
+    <ion-content padding class="img">
+      <ion-header>
+        <ion-card>
+        
+          <ion-card-content>
+    <ion-list no-lines>
+      <ion-item>
+        <ion-icon name="at" item-start></ion-icon>
+        <ion-label stacked>Email</ion-label>
+      <ion-input style="color:white" type="email"  [(ngModel)]="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="lock" item-start></ion-icon>
+      <ion-label  stacked>Password</ion-label>
+    <ion-input style="color:white" type="password"  [(ngModel)]="password"></ion-input>
+  </ion-item>
+      
+  <button ion-button block round  (click)="signUp()" color="secondary">Sign Up</button>
+  
+    
+    </ion-list>
+          </ion-card-content>
+    
+        </ion-card>
+      </ion-header>
+    </ion-content>
