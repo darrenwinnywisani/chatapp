@@ -4,6 +4,8 @@ import { AuthProvider } from './../../providers/auth/auth';
 import { ChatRoomsProvider } from './../../providers/chat-rooms/chat-rooms';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, Alert, AlertController } from 'ionic-angular';
+import { ProfilePage } from '../profile/profile';
+import { ProfilesPage } from '../profiles/profiles';
 
 
 @IonicPage()
@@ -92,11 +94,22 @@ chatRoomsListSnapShot.forEach(snap =>{
 })
 alert.present();
 }
-  logout(){
-    this.authProvider.signOut().then(() => {
-    this.navCtrl.setRoot('LoginPage')
-    })
-  }
+addDJ(){
+  this.navCtrl.push(ProfilesPage);
+}
+  // logout(){
+  //   this.authProvider.signOut().then(() => {
+  //   this.navCtrl.setRoot('LoginPage')
+  //   })
+  // }
+    // goToProfile(){
+    //   this.navCtrl.push('ProfilePage')
+    // }
+    logout(){
+      this.authProvider.signOut().then(() => {
+      this.navCtrl.setRoot('LoginPage')
+      })
+    }
     goToProfile(){
       this.navCtrl.push('ProfilePage')
     }

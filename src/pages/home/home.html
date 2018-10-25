@@ -1,7 +1,7 @@
 <ion-header>
   <ion-navbar color="secondary">
     <h1><ion-title>
-      welcome: {{userProfile?.firstName}}
+      <!-- welcome: {{userProfile?.firstName}} -->
     </ion-title></h1>
     <ion-buttons end>
 <button ion-button icon-only (click)="exitChat()">
@@ -12,7 +12,7 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding >
+<ion-content padding  >
  
 
   <ion-list>
@@ -50,7 +50,7 @@
     <ion-row>
       <ion-col col-10>
         <button ion-button round outline >
-        <ion-input  style="color:white" type="text" placeholder="Type a message" [(ngModel)]="data.message"></ion-input>
+        <ion-input  style="color:black" type="text" placeholder="Type a message" [(ngModel)]="data.message"></ion-input>
         <ion-icon name="attach"></ion-icon>
       </button>
       </ion-col>

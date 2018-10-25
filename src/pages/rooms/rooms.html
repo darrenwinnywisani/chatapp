@@ -1,26 +1,44 @@
 
 <ion-header>
 
-  <ion-navbar  color="secondary">
-    <h1><ion-title>Rooms</ion-title></h1>
+  <ion-navbar  color="danger">
+    <h1><ion-title text-center>Rooms</ion-title></h1>
     <ion-buttons end >
       <button ion-button icon-only (click)="createRoom()">
         <ion-icon name="add"></ion-icon>
         </button>
-          <button ion-button icon-only (click)="logout()">
+          <!-- <button ion-button icon-only (click)="logout()">
             <ion-icon name="log-out"></ion-icon>
           </button>
           <button ion-button icon-only (click)="goToProfile()">
             <ion-icon name="person"></ion-icon>
         
-        </button>
+        </button> -->
     </ion-buttons>
   </ion-navbar>
  
  </ion-header>
  
  
- <ion-content padding class="img">
+ <ion-content padding class="content">
+
+   
+      <ion-fab right bottom>
+          <button ion-fab color="light"><ion-icon name="arrow-dropleft"></ion-icon></button>
+          <ion-fab-list side="left">
+              <button ion-button round icon-only (click)="logout()" color="danger">
+                  <ion-icon name="log-out"></ion-icon>
+                </button>
+                <button ion-button round icon-only (click)="goToProfile()" color="danger">
+                  <ion-icon name="person"></ion-icon>
+              
+              </button>
+          </ion-fab-list>
+        </ion-fab>
+    <!-- <ion-fab bottom right color="danger">
+        <button ion-fab (click)=" addDJ()"><ion-icon name="add"></ion-icon>   <ion-icon name="person"></ion-icon></button>
+      
+      </ion-fab> -->
  <ion-list no-lines>
 <ion-item *ngFor="let chatRoom of chatRoomsList" (click)="joinRoom(chatRoom.id)">
   <h2>{{chatRoom?.name}}</h2>

@@ -7,24 +7,16 @@
 <ion-header>
 
   <ion-navbar color="secondary">
-   <h1> <ion-title>Reset</ion-title></h1>
+   <ion-title text-center>Reset</ion-title>
   </ion-navbar>
 
 </ion-header>
-<ion-content padding class="img">
-  <ion-header>
-    <ion-card>
-    
-      <ion-card-content>
-<ion-list no-lines>
-  <ion-item>
-    <ion-label stacked> <ion-icon name="at"> Email:</ion-icon></ion-label>
-    <ion-input type="email" placeholder="Your email address to reset password"></ion-input>
+<ion-content padding class="contact">
+  <div class="container">
+  <ion-item  class="items">
+    <ion-label stacked>Email:</ion-label>
+    <ion-input class="input"  type="email" placeholder="Your email"></ion-input>
   </ion-item>
-  <button ion-button block (click)="resetPassword()">Reset Password</button>
-</ion-list>
-      </ion-card-content>
-
-    </ion-card>
-  </ion-header>
+  <button ion-button full round color="danger"(click)="resetPassword()">Reset Password</button>
+</div>
 </ion-content>

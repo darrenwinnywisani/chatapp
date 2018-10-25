@@ -1,3 +1,4 @@
+import { HomePage } from './../pages/home/home';
 
 import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
@@ -17,7 +18,7 @@ const config = {
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any 
+  rootPage:any=HomePage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {

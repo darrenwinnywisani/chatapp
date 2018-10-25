@@ -1,3 +1,4 @@
+import { LoginPage } from './../login/login';
 
 import { Component } from '@angular/core';
 import {Alert,AlertController,Loading,LoadingController,
@@ -45,4 +46,7 @@ signUp(){
     }
   } 
 
+  gotosignin(){
+    this.navCtrl.push(LoginPage);
+  }
 }

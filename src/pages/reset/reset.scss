@@ -1,14 +1,71 @@
-.img{
-    background-image:url('../../assets/imgs/do.png');
-    background-size: cover;
-    height: 100%;
-    overflow: hidden;
-    .item-md, .item-ios {
-      background: none;
+page-resetpassword {
+    
+    .content{
+        background-color:burlywood;
+        // background-image: url("../assets/imgs/back.jpg");
+        background-size:  100%;
+        background-repeat: no-repeat;
     }
-    .list{
-        background:white;
-    } 
-    h1{
-        text-align: center;
-    }}
+    .scroll-content {
+        overflow: hidden !important;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        flex-direction: column;
+        right: 0;
+        position: absolute;
+
+        .name-holder {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+
+       
+
+    .app-name {
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        color: #3fbac2;
+        font-weight: bolder
+    }
+    }
+
+        .form-holder {
+            width: 100%;
+            padding: 20px;
+        }
+    .items {
+        background-color: transparent;
+
+        color:whitesmoke;
+        .input {
+     
+            color:#4d606e;
+
+            //background: rgba(255, 255, 255, 0.3);
+           // border-radius: 10px;
+        }
+       
+       
+      }
+
+    #button {
+        color: #3fbac2;
+        color: white;
+        border-radius:50px;
+    }
+  
+}
+}

@@ -1,3 +1,7 @@
+import { ProfilesPage } from './../pages/profiles/profiles';
+import { ProfilePage } from './../pages/profile/profile';
+import { LoginPage } from './../pages/login/login';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -11,10 +15,14 @@ import { ChatRoomsProvider } from '../providers/chat-rooms/chat-rooms';
 import { ProfileProvider } from '../providers/profile/profile';
 import { ChatProvider } from '../providers/chat/chat';
 
+import { RoomsPage } from '../pages/rooms/rooms';
+
+
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    ProfilesPage
   ],
   imports: [
     BrowserModule,
@@ -23,7 +31,8 @@ import { ChatProvider } from '../providers/chat/chat';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    ProfilesPage
   ],
   providers: [
     StatusBar,

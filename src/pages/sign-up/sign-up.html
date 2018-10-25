@@ -1,36 +1,43 @@
 
-<ion-header>
+<!-- <ion-header>
 
     <ion-navbar color="secondary">
       <h1><ion-title>signup</ion-title></h1>
     </ion-navbar>
   
-  </ion-header>
+  </ion-header> -->
   
 
-    <ion-content padding class="img">
-      <ion-header>
-        <ion-card>
-        
-          <ion-card-content>
-    <ion-list no-lines>
+    <ion-content padding class="content">
+        <div class="container">
+      <h2 align="center">Create Account</h2> 
+     
       <ion-item>
-        <ion-icon name="at" item-start></ion-icon>
+        <!-- <ion-icon name="at" item-start></ion-icon> -->
+        <ion-label stacked>FirstName</ion-label>
+      <ion-input style="color:black" type="firstname"  [(ngModel)]="firstname"></ion-input>
+      </ion-item>
+    <ion-item>
+      <!-- <ion-icon name="at" item-start></ion-icon> -->
+      <ion-label stacked>LastName</ion-label>
+    <ion-input style="color:black" type="lastname"  [(ngModel)]="lastname"></ion-input>
+    </ion-item>
+      <ion-item>
+        <!-- <ion-icon name="at" item-start></ion-icon> -->
         <ion-label stacked>Email</ion-label>
-      <ion-input style="color:white" type="email"  [(ngModel)]="email"></ion-input>
+      <ion-input style="color:black" type="email"  [(ngModel)]="email"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-icon name="lock" item-start></ion-icon>
+      <!-- <ion-icon name="lock" item-start></ion-icon> -->
       <ion-label  stacked>Password</ion-label>
-    <ion-input style="color:white" type="password"  [(ngModel)]="password"></ion-input>
+    <ion-input style="color:black" type="password"  [(ngModel)]="password"></ion-input>
   </ion-item>
       
-  <button ion-button block round  (click)="signUp()" color="secondary">Sign Up</button>
+  <button ion-button block round  (click)="signUp()" color="danger">Sign Up</button>
   
     
-    </ion-list>
-          </ion-card-content>
-    
-        </ion-card>
-      </ion-header>
+  <div  style="text-align:center" padding>
+    <p style="color:#4d606e" class="p">Or, <a style="color:#3fbac2"(click)="gotosignin()">Log in</a></p>
+</div>
+</div>
     </ion-content>
